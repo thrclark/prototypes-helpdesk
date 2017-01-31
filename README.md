@@ -1,2 +1,2 @@
-# one-prototypes
-Prototype files for the One.IU project
+# Help Desk prototypes
+Prototype files for the IU Helpdesk project
