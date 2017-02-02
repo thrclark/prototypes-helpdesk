@@ -4,17 +4,7 @@
 <meta charset="UTF-8">
 <title>Untitled Document</title>
 <link href="../less/styles.css" rel="stylesheet" type="text/css">
-<style>
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-	background-color: #f5f5f5;
-}
-.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:hover, .nav-tabs.nav-justified>.active>a:focus {
-	border-bottom-color: whitesmoke;
-}
-.nav-tabs.nav-justified {
-	margin-bottom: -1px;
-}
-</style>
+<style></style>
 </head>
 
 <body id="top" screen_capture_injected="true">
@@ -24,364 +14,535 @@
         <div class="container" >
             <div class="row">
                 <div class="col-xs-12">
-                    <h1 class="" style="border-bottom:solid 1px #dddddd; padding-bottom:10px; margin-bottom:10px">IU Help Desk</h1>
+                    <h1 class="">IU Help Desk</h1>
                 </div>
             </div>
         </div>
     </header>
     <div class="main-content container" role="main">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 search">
                 <div class="lead">Search</div>
                 <div> 
                     
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs nav-justified" role="tablist">
-                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">By User</a></li>
-                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">By Group</a></li>
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" id="by_user">By User</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" id="by_group">By Group</a></li>
                     </ul>
                 </div>
-                <div class="well well-sm" style="border-top:none;    padding-top: 10px;
-    padding-bottom: 10px;">
+                <div class="well well-sm">
                     <div class="input-group input-group-lg">
-                        <input type="text" class="form-control" placeholder="" style="border-right:none">
+                        <input type="text" class="form-control" placeholder="" id="query">
                         <span class="input-group-btn">
-                        <button class="btn btn-default" type="button" style="    border-left: none;
-    background: transparent;background-color: white;"><i class="fa fa-search" aria-hidden="true"><span class="sr-only">Search</span></i></button>
+                        <button class="btn btn-default" type="button" id="searchbutton"><i class="fa fa-search" aria-hidden="true"><span class="sr-only">Search</span></i></button>
                         </span> </div>
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="search-results" style="border-left: solid 1px #dddddd; padding-left:30px; min-height:400px">
-                    <div class="lead"> User: thrclark</div>
-                    <table class="table table-condensed">
-                    <thead class="sr-only"> <tr>
-                                <th>Role Name</th>
-                                <th>Role Value</th>
-                            </tr></thead>
-                        <tbody>
-                           
-                            <tr> <td>Common Name</td>
-                                <td> Clark, Tom Robert </td>
-                            </tr>
-                            <tr> <td>EMPLID</td>
-                                <td> 0001261181 </td>
-                            </tr>
-                            <tr> <td>Family Name</td>
-                                <td> Clark </td>
-                            </tr>
-                            <tr> <td>Primary Chart</td>
-                                <td> SM </td>
-                            </tr>
-                            <tr> <td>OU</td>
-                                <td> BL </td>
-                            </tr>
-                            <tr> <td>Network ID</td>
-                                <td> thrclark </td>
-                            </tr>
-                            <tr> <td>Primary Org</td>
-                                <td> VPIT </td>
-                            </tr>
-                            <tr> <td>Full Name</td>
-                                <td> Tom Clark </td>
-                            </tr>
-                            <tr> <td>UID</td>
-                                <td> thrclark </td>
-                            </tr>
-                            <tr> <td>Personal Affiliation</td>
-                                <td> Staff
-                                    
-                                    ,&nbsp;
-                                    
-                                    
-                                    Alumni </td>
-                            </tr>
-                            <tr> <td>OU Personal Affiliation</td>
-                                <td> BL.Staff </td>
-                            </tr>
-                            <tr> <td>Given Name</td>
-                                <td> Tom </td>
-                            </tr>
-                            <tr> <td>Currently Enrolled</td>
-                                <td> N </td>
-                            </tr>
-                            <tr> <td>IU Email</td>
-                                <td> thrclark@iu.edu </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <th valign="top"><strong>ADS Groups:</strong></th>
-                                <td> AC_MEETINGHOSTS<br>
-                                    ATH-ADMIN<br>
-                                    BL-CIB-CONFERENCEROOM-AUTOSCHEDULE<br>
-                                    BL-CIB-CONFERENCEROOM-REVIEWER<br>
-                                    BL-CIB-FOCUSBOOTH-AUTOSCHEDULE<br>
-                                    BL-CIB-FOCUSBOOTH-REVIEWER<br>
-                                    BL-CIB-MP-B-REQUESTAPPROVAL<br>
-                                    BL-CIB-MP-B-REVIEWER<br>
-                                    BL-CIB-WRUBEL-LOBBY-REQUESTAPPROVAL<br>
-                                    BL-CIB-WRUBEL-LOBBY-REVIEWER<br>
-                                    BL-IUIC-CONFERENCEROOM-AUTOSCHEDULE<br>
-                                    BL-IUIC-CONFERENCEROOM-REVIEWER<br>
-                                    BL-LIBG-EZPROXY-IUB-ACCESS<br>
-                                    BL-T2-CONFERENCEROOM-AUTOSCHEDULE<br>
-                                    BL-T2-CONFERENCEROOM-REVIEWER<br>
-                                    BL-UITS-APPOINTEDSTAFF<br>
-                                    BL-UITS-AVL-SOS-AUTOSCHEDULE<br>
-                                    BL-UITS-BISONUSERS<br>
-                                    BL-UITS-CALENDAR-BACKDOOR<br>
-                                    BL-UITS-CALENDAR-BACKDOOR-SND<br>
-                                    BL-UITS-CALENDAR-BACKDOOR-STG<br>
-                                    BL-UITS-CIB-180-REV<br>
-                                    BL-UITS-EDEN<br>
-                                    BL-UITS-EDSS_EBI_CONSUMER_MEMBERS<br>
-                                    BL-UITS-EDSS_EBI_CONSUMER_PRD_TAB_CON_PRD_VPR_ALLFACSTF<br>
-                                    BL-UITS-EDSS_EBI_CONSUMER_PRD_UIRR-UA-NFST<br>
-                                    BL-UITS-EDSS_UNIVERSITY_INTERNAL<br>
-                                    BL-UITS-ENTERPRISE-SOFTWARE-STAFF<br>
-                                    BL-UITS-ERA<br>
-                                    BL-UITS-ERACONTRIBUTORS<br>
-                                    BL-UITS-ERAUSERS<br>
-                                    BL-UITS-ERAVIEWERS<br>
-                                    BL-UITS-ES-ESID_STAFF<br>
-                                    BL-UITS-ESA-MONITORING-ACCESS<br>
-                                    BL-UITS-ESPD-SD-TEAM<br>
-                                    BL-UITS-FSNETWORKUSERS<br>
-                                    BL-UITS-HDS-NAS<br>
-                                    BL-UITS-HDS-NAS-TEST<br>
-                                    BL-UITS-LSP-COMPUTERDFSACCESS<br>
-                                    BL-UITS-LSP-WINXPSP<br>
-                                    BL-UITS-ONESTART-ADMIN<br>
-                                    BL-UITS-ONESTART-ALL-PUBLISHERS<br>
-                                    BL-UITS-ONESTART-BRTE<br>
-                                    BL-UITS-ONESTART-CCF-EMAIL<br>
-                                    BL-UITS-ONESTART-HRMS-TST<br>
-                                    BL-UITS-ONESTART-OVERSEER<br>
-                                    BL-UITS-ONESTART-SECUREHELPDESK<br>
-                                    BL-UITS-ONESTART-STUDENT-SERVICES-DEMO<br>
-                                    BL-UITS-ONESTART-SUPPORT-PAGE<br>
-                                    BL-UITS-ONESTART-TEAM<br>
-                                    BL-UITS-ONESTART-UISDEV<br>
-                                    BL-UITS-ONESTART2-BACKDOOR<br>
-                                    BL-UITS-ONESTART2-PUBLISHERS<br>
-                                    BL-UITS-ONESTART2-ROLE-VIEWER<br>
-                                    BL-UITS-PICSALL<br>
-                                    BL-UITS-PSE-BACKDOOR<br>
-                                    BL-UITS-RESMBOX-CIB-MOTHER-ROOM-AUTOSCHEDULE<br>
-                                    BL-UITS-RESMBOX-CIB-MOTHER-ROOM-REVIEWERS<br>
-                                    BL-UITS-RESMBOX-IR-MOTHER-ROOM-AUTOSCHEDULE<br>
-                                    BL-UITS-RESMBOX-IR-MOTHER-ROOM-REVIEWERS<br>
-                                    BL-UITS-SAV<br>
-                                    BL-UITS-SIT<br>
-                                    BL-UITS-SITDEV<br>
-                                    BL-UITS-TIME-ONESTART-DEMO<br>
-                                    BL-UITS-USABLE<br>
-                                    BL-UITS-YAKUSERS<br>
-                                    GETCONNECTEDREPORTING<br>
-                                    IN-HNET-UITSLYNC<br>
-                                    IN-IT-ATRIUM-REVIEWER<br>
-                                    IN-IT-CONFERENCEROOM-AUTOSCHEDULE<br>
-                                    IN-IT-CONFERENCEROOM-REVIEWER<br>
-                                    IN-IT-FOCUSBOOTH-AUTOSCHEDULE<br>
-                                    IN-IT-FOCUSBOOTH-REVIEWER<br>
-                                    IN-IT-GALLERY-REVIEWER<br>
-                                    IN-IT-LOUNGE-REVIEWER<br>
-                                    IU-CCI-MIGRATION-PRD-EXCHANGEMIGRATION-SELF<br>
-                                    IU-CCI-SHIELD-PRD-GENERAL-VIEWERS<br>
-                                    IU-CCI-SHIELD-PRD-PERSISTENTCHATCATEGORY-MANAGERS<br>
-                                    IU-CCI-SHIELD-PRD-USERS<br>
-                                    IU-CV-7ZIP-FS<br>
-                                    IU-CV-ADOBE-CS5.5-FS<br>
-                                    IU-CV-ADOBEACROBAT-FS<br>
-                                    IU-CV-ADOBEREADER-FS<br>
-                                    IU-CV-ANYCLIENT-FS<br>
-                                    IU-CV-AQUADATASTUDIO-FS<br>
-                                    IU-CV-ARCGIS-FS<br>
-                                    IU-CV-AUDACITY-FS<br>
-                                    IU-CV-BASEAPPACCESS-FS<br>
-                                    IU-CV-CICSUPERVISORCLIENT3-FS<br>
-                                    IU-CV-CICSUPERVISORCLIENT3-S<br>
-                                    IU-CV-CICUSERCLIENT3-FS<br>
-                                    IU-CV-CICUSERCLIENT3-S<br>
-                                    IU-CV-DIRECTRT-FS<br>
-                                    IU-CV-DROPBOX-FS<br>
-                                    IU-CV-EASYMP3-FS<br>
-                                    IU-CV-EVERNOTE-FS<br>
-                                    IU-CV-FOXIT-FS<br>
-                                    IU-CV-FSALL<br>
-                                    IU-CV-GEOMETERSSKETCHPAD-FS<br>
-                                    IU-CV-GOLDVARB-FS<br>
-                                    IU-CV-GOPENMOL-FS<br>
-                                    IU-CV-IDENTITYFINDER-FS<br>
-                                    IU-CV-IE8-FS<br>
-                                    IU-CV-IMPACT-FS<br>
-                                    IU-CV-INSPIRATION-FS<br>
-                                    IU-CV-INSTACAL-FS<br>
-                                    IU-CV-KIDPIX-FS<br>
-                                    IU-CV-KIDSPIRATION3-FS<br>
-                                    IU-CV-LYNC-FS<br>
-                                    IU-CV-MAGE-FS<br>
-                                    IU-CV-MAPLE15-FS<br>
-                                    IU-CV-MATHEMATICA8-FS<br>
-                                    IU-CV-MATLAB2011A-FS<br>
-                                    IU-CV-MATLAB2012A-ALL<br>
-                                    IU-CV-MEGA-FS<br>
-                                    IU-CV-MINITAB16-FS<br>
-                                    IU-CV-NOVANETPORTAL-FS<br>
-                                    IU-CV-OFFICE2K10-FS<br>
-                                    IU-CV-OFFICE2K3-FS<br>
-                                    IU-CV-OFFICE2K7-FS<br>
-                                    IU-CV-ONSCREENKEYBOARD-FS<br>
-                                    IU-CV-PARAVIEW-FS<br>
-                                    IU-CV-PICASA-FS<br>
-                                    IU-CV-PRIMAVERACONTRACTMANAGER-FS<br>
-                                    IU-CV-PROJECT-FS<br>
-                                    IU-CV-PUTTY-FS<br>
-                                    IU-CV-PYTHON 2.7.1-FS<br>
-                                    IU-CV-QUICKTIME-FS<br>
-                                    IU-CV-R-FS<br>
-                                    IU-CV-REMOTEDESKTOPCONNECTION-FS<br>
-                                    IU-CV-RETSCREEN-FS<br>
-                                    IU-CV-SAPGUI-FS<br>
-                                    IU-CV-SAS9.3-FS<br>
-                                    IU-CV-SCRATCH-FS<br>
-                                    IU-CV-SEISMICERUPTION-FS<br>
-                                    IU-CV-SPSS19-FS<br>
-                                    IU-CV-SPSS20-ALL<br>
-                                    IU-CV-STATA12-FS<br>
-                                    IU-CV-STATTRANSFER11-FS<br>
-                                    IU-CV-STELLARIUM-FS<br>
-                                    IU-CV-SWISSPDBVIEWER-FS<br>
-                                    IU-CV-SYMYXDRAW-FS<br>
-                                    IU-CV-TEXTPAD-FS<br>
-                                    IU-CV-TURNINGPOINTANYWHERE-FS<br>
-                                    IU-CV-VISIO-FS<br>
-                                    IU-CV-VLC-FS<br>
-                                    IU-CV-VSPHERE-FS<br>
-                                    IU-CV-WINDOWSHELP-FS<br>
-                                    IU-CV-WINQUAKE-FS<br>
-                                    IU-CV-WINSCP-FS<br>
-                                    IU-CV-WSXM-FS<br>
-                                    IU-EITS-FOCUSBOOTHS-USERS<br>
-                                    IU-ENTLMT-APP-CAS-MFA<br>
-                                    IU-ENTLMT-APP-CAS-MFA-REQUIRED<br>
-                                    IU-ENTLMT-APP-CAS-TEST-MFA<br>
-                                    IU-ENTLMT-APP-UIRR-UA-NFSTU<br>
-                                    IU-IMS-CAS-MFA-REQ<br>
-                                    IU-ITCP-IT28-STATUS<br>
-                                    IU-LSPS-DBV2-GUESTUSERS<br>
-                                    IU-LSPS-DBV2-IUWARE<br>
-                                    IU-LSPS-DBV2-PRODUCTKEYS<br>
-                                    IU-LSPS-DBV2-SEARCHEXEMPTIONS<br>
-                                    IU-LSPS-IUWAREEXEMPTION<br>
-                                    IU-LSPS-IUWARERESTRICTEDACCESS<br>
-                                    IU-LSPS-IUWARE_SERVER_DOWNLOAD<br>
-                                    IU-LSPS-KBRESTRICTEDACCESS<br>
-                                    IU-LSPS-LSPONLINEUITS<br>
-                                    IU-LSPS-LSPONLINEUSER<br>
-                                    IU-LSPS-W2K3R2<br>
-                                    IU-MSSG-ECA-IUIPSECOFFLINE<br>
-                                    IU-MSSG-ECA-IUWEBSERVER<br>
-                                    IU-MSSG-ECA-IUWORKSTATIONAUTHENTICATION<br>
-                                    IU-MSSG-ECA-IUWORKSTATIONAUTHENTICATIONOFFLINE<br>
-                                    IU-ONESTART-FORUMS<br>
-                                    IU-ONESTART-KUALI-DEVELOPERS<br>
-                                    IU-ONESTART-ONEPLACE-INITIAL-TESTERS<br>
-                                    IU-ONESTART-OSG-ADMINS<br>
-                                    IU-ONESTART-ROLE-VIEWER<br>
-                                    IU-PSIA-HIPAA-ALERT-SEPT2012<br>
-                                    IU-SAV-HCP-AD-INTEGRATION-GROUP<br>
-                                    IU-SCT2-FREEDUO<br>
-                                    IU-UITS-ALLSTAFF<br>
-                                    IU-UITS-CV-FACSTAFF<br>
-                                    IU-UITS-ENTERPRISE_SYSTEMS_INTEGRATION-STAFF<br>
-                                    IU-UITS-ITCP-PHISHALARM-DOWNLOAD<br>
-                                    IU-UITS-ITCP-UITS-PROFESSIONALS-ALL<br>
-                                    IU-UITS-ITCP-WOMBAT-TRAINING<br>
-                                    IU-UITS-KMS-AUDIENCE-IU-KB<br>
-                                    IU-UITS-KMS-AUDIENCE-KMS-ALL<br>
-                                    IU-UITS-KMS-AUDIENCE-UITS<br>
-                                    IU-UITS-KMS-EDIT-APPROVER<br>
-                                    IU-UITS-KMS-EDIT-APPROVER-ESPD<br>
-                                    IU-UITS-KMS-EDIT-USER<br>
-                                    IU-UITS-KMS-EDIT-USER-MDTEST<br>
-                                    IU-UITS-MANAGED-ALUMNI<br>
-                                    IU-UITS-MANAGED-BL-STAFF<br>
-                                    IU-UITS-MANAGED-BOX-USERS<br>
-                                    IU-UITS-MANAGED-DEPT-UA-VPIT<br>
-                                    IU-UITS-MANAGED-EBI-FERPA-ACCESS<br>
-                                    IU-UITS-MANAGED-EBI-UNIVERSITY-INTERNAL<br>
-                                    IU-UITS-MANAGED-EXCHANGE<br>
-                                    IU-UITS-MANAGED-EZPROXY-BL<br>
-                                    IU-UITS-MANAGED-ITCP-WOMBAT-TRAINING<br>
-                                    IU-UITS-MANAGED-KB-ALL<br>
-                                    IU-UITS-NETWORKING-STAFF<br>
-                                    IU-UITS-RESMBOX-IC-120-CAL-REQUESTAPPROVAL<br>
-                                    IU-UITS-RESMBOX-IC-216-CAL-REQUESTAPPROVAL<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_BL-CR-003-HPLJ9040-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_BL-IC-130-HPM476NW-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_BL-IC-133-RICOHMP-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_BL-LI-209-HPCLJ2605-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_BL-LI-305-HPLJ3005DN-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_BL-LI-E249-XP6500DN-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-013-HPLJP3015-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-035-HPCLJCP4005-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-113C-HPLJPD055-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-129B-HPCLJ3600-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-205-RICOHMP6001-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-210M-HPLJ9050-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-225D-HP451DN-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-314F-CIR5055-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-314F-HPLJ9050-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-314H-DJ800-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-324-HPLJ4050-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-324-KM4690MF-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-408-RICOH3300-P<br>
-                                    IU-UITS-SERVERS-PROD-PRINT-OHM-USERS<br>
-                                    IU-UITS-TURING-DEPT-ES-ES-ESI-RW<br>
-                                    IU-UITS-TURING-DEPT-ES-ES-RW<br>
-                                    IU-UITS-TURING-DEPT-ES-RW<br>
-                                    IU-UITS-TURING-USERS<br>
-                                    IU-UITS-TURING-WORKGROUPACCESS<br>
-                                    IU-UITS-TURING-WRKGRP-DCOPS_APPLICATION_BATCH-RO<br>
-                                    IU-UITS-TURING-WRKGRP-DCOPS_DOCUMENT_DROPOFF<br>
-                                    IU-UITS-TURING-WRKGRP-DSCALL-RO<br>
-                                    IU-UITS-TURING-WRKGRP-PXA<br>
-                                    IU-UITS-TURING-WRKGRP-UIS_FISCAL<br>
-                                    IU-UITS-WORKFLOW-PUBLISHING-GLOBAL<br>
-                                    IU-UITS-WORKSTATIONUSERS<br>
-                                    IU-USSS_STAFF_FAC_GRAD_PRO_ACCESS<br>
-                                    IU-WCMS-USERS<br>
-                                    JTEST-ADS-ADMIN2<br>
-                                    JTEST-ADS-TEST<br>
-                                    JTEST-USER-VIEW<br>
-                                    KUALI-WORKFLOW-ADMINS<br>
-                                    NATEGROUP-UNT-TEST<br>
-                                    NATEGROUP2<br>
-                                    NATEGROUP541<br>
-                                    NATEGROUP542<br>
-                                    NATEGROUPXXXXX<br>
-                                    SAFEWORD_USERS<br>
-                                    SDD-DASHBOARD<br>
-                                    SDD-HERMES-REPORTING<br>
-                                    SDD-IUWARE<br>
-                                    SDD-IUWARE-IMS-EMPLOYEE<br>
-                                    SDD-IUWARE-IMS-STAFF<br>
-                                    SDD-IUWARE-SALES<br>
-                                    SSL-IUWARE-ROLE-ITPRO<br>
-                                    SSL-IUWARE-ROLE-MUSSIBELIUS<br>
-                                    SSL-IUWARE-ROLE-UITSPGP<br>
-                                    SSL-IUWARE-ROLEGROUPS<br>
-                                    UCP-USERS<br>
-                                    UCS-ALL<br>
-                                    UCS-APPOINTED<br>
-                                    UIS STAFF ? BLOOMINGTON<br>
-                                    UITS-10TH-UNION<br></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="search-results">
+                    <div class="lead"> <span id="label_user" style="">User</span><span id="label_group" style="display:none">Group</span><span id="sr_userlabel" style="display:none">: thrclark</span><span id="sr_grouplabel" style="display:none">: UCS-ALL</span></div>
+                    <dl id="sr_user" style="display:none">
+                        <dt>Common Name</dt>
+                        <dd>Clark, Tom Robert</dd>
+                        <dt>EMPLID</dt>
+                        <dd>0001261181</dd>
+                        <dt>Family Name</dt>
+                        <dd>Clark</dd>
+                        <dt>Primary Chart</dt>
+                        <dd>SM</dd>
+                        <dt>OU</dt>
+                        <dd>BL</dd>
+                        <dt>Network ID</dt>
+                        <dd>thrclark</dd>
+                        <dt>Primary Org</dt>
+                        <dd>VPIT</dd>
+                        <dt>Full Name</dt>
+                        <dd>Tom Clark</dd>
+                        <dt>UID</dt>
+                        <dd>thrclark</dd>
+                        <dt>Personal Affiliation</dt>
+                        <dd>Staff, Alumni</dd>
+                        <dt>OU Personal Affiliation</dt>
+                        <dd>BL.Staff</dd>
+                        <dt>Given Name</dt>
+                        <dd>Tom</dd>
+                        <dt>Currently Enrolled</dt>
+                        <dd>No</dd>
+                        <dt>IU Email</dt>
+                        <dd>thrclark@iu.edu</dd>
+                        <dt>ADS Groups</dt>
+                        <dd>AC_MEETINGHOSTS</dd>
+                        <dd>ATH-ADMIN</dd>
+                        <dd>BL-CIB-CONFERENCEROOM-AUTOSCHEDULE</dd>
+                        <dd>BL-CIB-CONFERENCEROOM-REVIEWER</dd>
+                        <dd>BL-CIB-FOCUSBOOTH-AUTOSCHEDULE</dd>
+                        <dd>BL-CIB-FOCUSBOOTH-REVIEWER</dd>
+                        <dd>BL-CIB-MP-B-REQUESTAPPROVAL</dd>
+                        <dd>BL-CIB-MP-B-REVIEWER</dd>
+                        <dd>BL-CIB-WRUBEL-LOBBY-REQUESTAPPROVAL</dd>
+                        <dd>BL-CIB-WRUBEL-LOBBY-REVIEWER</dd>
+                        <dd>BL-IUIC-CONFERENCEROOM-AUTOSCHEDULE</dd>
+                        <dd>BL-IUIC-CONFERENCEROOM-REVIEWER</dd>
+                        <dd>BL-LIBG-EZPROXY-IUB-ACCESS</dd>
+                        <dd>BL-T2-CONFERENCEROOM-AUTOSCHEDULE</dd>
+                        <dd>BL-T2-CONFERENCEROOM-REVIEWER</dd>
+                        <dd>BL-UITS-APPOINTEDSTAFF</dd>
+                        <dd>BL-UITS-AVL-SOS-AUTOSCHEDULE</dd>
+                        <dd>BL-UITS-BISONUSERS</dd>
+                        <dd>BL-UITS-CALENDAR-BACKDOOR</dd>
+                        <dd>BL-UITS-CALENDAR-BACKDOOR-SND</dd>
+                        <dd>BL-UITS-CALENDAR-BACKDOOR-STG</dd>
+                        <dd>BL-UITS-CIB-180-REV</dd>
+                        <dd>BL-UITS-EDEN</dd>
+                        <dd>BL-UITS-EDSS_EBI_CONSUMER_MEMBERS</dd>
+                        <dd>BL-UITS-EDSS_EBI_CONSUMER_PRD_TAB_CON_PRD_VPR_ALLFACSTF</dd>
+                        <dd>BL-UITS-EDSS_EBI_CONSUMER_PRD_UIRR-UA-NFST</dd>
+                        <dd>BL-UITS-EDSS_UNIVERSITY_INTERNAL</dd>
+                        <dd>BL-UITS-ENTERPRISE-SOFTWARE-STAFF</dd>
+                        <dd>BL-UITS-ERA</dd>
+                        <dd>BL-UITS-ERACONTRIBUTORS</dd>
+                        <dd>BL-UITS-ERAUSERS</dd>
+                        <dd>BL-UITS-ERAVIEWERS</dd>
+                        <dd>BL-UITS-ES-ESID_STAFF</dd>
+                        <dd>BL-UITS-ESA-MONITORING-ACCESS</dd>
+                        <dd>BL-UITS-ESPD-SD-TEAM</dd>
+                        <dd>BL-UITS-FSNETWORKUSERS</dd>
+                        <dd>BL-UITS-HDS-NAS</dd>
+                        <dd>BL-UITS-HDS-NAS-TEST</dd>
+                        <dd>BL-UITS-LSP-COMPUTERDFSACCESS</dd>
+                        <dd>BL-UITS-LSP-WINXPSP</dd>
+                        <dd>BL-UITS-ONESTART-ADMIN</dd>
+                        <dd>BL-UITS-ONESTART-ALL-PUBLISHERS</dd>
+                        <dd>BL-UITS-ONESTART-BRTE</dd>
+                        <dd>BL-UITS-ONESTART-CCF-EMAIL</dd>
+                        <dd>BL-UITS-ONESTART-HRMS-TST</dd>
+                        <dd>BL-UITS-ONESTART-OVERSEER</dd>
+                        <dd>BL-UITS-ONESTART-SECUREHELPDESK</dd>
+                        <dd>BL-UITS-ONESTART-STUDENT-SERVICES-DEMO</dd>
+                        <dd>BL-UITS-ONESTART-SUPPORT-PAGE</dd>
+                        <dd>BL-UITS-ONESTART-TEAM</dd>
+                        <dd>BL-UITS-ONESTART-UISDEV</dd>
+                        <dd>BL-UITS-ONESTART2-BACKDOOR</dd>
+                        <dd>BL-UITS-ONESTART2-PUBLISHERS</dd>
+                        <dd>BL-UITS-ONESTART2-ROLE-VIEWER</dd>
+                        <dd>BL-UITS-PICSALL</dd>
+                        <dd>BL-UITS-PSE-BACKDOOR</dd>
+                        <dd>BL-UITS-RESMBOX-CIB-MOTHER-ROOM-AUTOSCHEDULE</dd>
+                        <dd>BL-UITS-RESMBOX-CIB-MOTHER-ROOM-REVIEWERS</dd>
+                        <dd>BL-UITS-RESMBOX-IR-MOTHER-ROOM-AUTOSCHEDULE</dd>
+                        <dd>BL-UITS-RESMBOX-IR-MOTHER-ROOM-REVIEWERS</dd>
+                        <dd>BL-UITS-SAV</dd>
+                        <dd>BL-UITS-SIT</dd>
+                        <dd>BL-UITS-SITDEV</dd>
+                        <dd>BL-UITS-TIME-ONESTART-DEMO</dd>
+                        <dd>BL-UITS-USABLE</dd>
+                        <dd>BL-UITS-YAKUSERS</dd>
+                        <dd>GETCONNECTEDREPORTING</dd>
+                        <dd>IN-HNET-UITSLYNC</dd>
+                        <dd>IN-IT-ATRIUM-REVIEWER</dd>
+                        <dd>IN-IT-CONFERENCEROOM-AUTOSCHEDULE</dd>
+                        <dd>IN-IT-CONFERENCEROOM-REVIEWER</dd>
+                        <dd>IN-IT-FOCUSBOOTH-AUTOSCHEDULE</dd>
+                        <dd>IN-IT-FOCUSBOOTH-REVIEWER</dd>
+                        <dd>IN-IT-GALLERY-REVIEWER</dd>
+                        <dd>IN-IT-LOUNGE-REVIEWER</dd>
+                        <dd>IU-CCI-MIGRATION-PRD-EXCHANGEMIGRATION-SELF</dd>
+                        <dd>IU-CCI-SHIELD-PRD-GENERAL-VIEWERS</dd>
+                        <dd>IU-CCI-SHIELD-PRD-PERSISTENTCHATCATEGORY-MANAGERS</dd>
+                        <dd>IU-CCI-SHIELD-PRD-USERS</dd>
+                        <dd>IU-CV-7ZIP-FS</dd>
+                        <dd>IU-CV-ADOBE-CS5.5-FS</dd>
+                        <dd>IU-CV-ADOBEACROBAT-FS</dd>
+                        <dd>IU-CV-ADOBEREADER-FS</dd>
+                        <dd>IU-CV-ANYCLIENT-FS</dd>
+                        <dd>IU-CV-AQUADATASTUDIO-FS</dd>
+                        <dd>IU-CV-ARCGIS-FS</dd>
+                        <dd>IU-CV-AUDACITY-FS</dd>
+                        <dd>IU-CV-BASEAPPACCESS-FS</dd>
+                        <dd>IU-CV-CICSUPERVISORCLIENT3-FS</dd>
+                        <dd>IU-CV-CICSUPERVISORCLIENT3-S</dd>
+                        <dd>IU-CV-CICUSERCLIENT3-FS</dd>
+                        <dd>IU-CV-CICUSERCLIENT3-S</dd>
+                        <dd>IU-CV-DIRECTRT-FS</dd>
+                        <dd>IU-CV-DROPBOX-FS</dd>
+                        <dd>IU-CV-EASYMP3-FS</dd>
+                        <dd>IU-CV-EVERNOTE-FS</dd>
+                        <dd>IU-CV-FOXIT-FS</dd>
+                        <dd>IU-CV-FSALL</dd>
+                        <dd>IU-CV-GEOMETERSSKETCHPAD-FS</dd>
+                        <dd>IU-CV-GOLDVARB-FS</dd>
+                        <dd>IU-CV-GOPENMOL-FS</dd>
+                        <dd>IU-CV-IDENTITYFINDER-FS</dd>
+                        <dd>IU-CV-IE8-FS</dd>
+                        <dd>IU-CV-IMPACT-FS</dd>
+                        <dd>IU-CV-INSPIRATION-FS</dd>
+                        <dd>IU-CV-INSTACAL-FS</dd>
+                        <dd>IU-CV-KIDPIX-FS</dd>
+                        <dd>IU-CV-KIDSPIRATION3-FS</dd>
+                        <dd>IU-CV-LYNC-FS</dd>
+                        <dd>IU-CV-MAGE-FS</dd>
+                        <dd>IU-CV-MAPLE15-FS</dd>
+                        <dd>IU-CV-MATHEMATICA8-FS</dd>
+                        <dd>IU-CV-MATLAB2011A-FS</dd>
+                        <dd>IU-CV-MATLAB2012A-ALL</dd>
+                        <dd>IU-CV-MEGA-FS</dd>
+                        <dd>IU-CV-MINITAB16-FS</dd>
+                        <dd>IU-CV-NOVANETPORTAL-FS</dd>
+                        <dd>IU-CV-OFFICE2K10-FS</dd>
+                        <dd>IU-CV-OFFICE2K3-FS</dd>
+                        <dd>IU-CV-OFFICE2K7-FS</dd>
+                        <dd>IU-CV-ONSCREENKEYBOARD-FS</dd>
+                        <dd>IU-CV-PARAVIEW-FS</dd>
+                        <dd>IU-CV-PICASA-FS</dd>
+                        <dd>IU-CV-PRIMAVERACONTRACTMANAGER-FS</dd>
+                        <dd>IU-CV-PROJECT-FS</dd>
+                        <dd>IU-CV-PUTTY-FS</dd>
+                        <dd>IU-CV-PYTHON 2.7.1-FS</dd>
+                        <dd>IU-CV-QUICKTIME-FS</dd>
+                        <dd>IU-CV-R-FS</dd>
+                        <dd>IU-CV-REMOTEDESKTOPCONNECTION-FS</dd>
+                        <dd>IU-CV-RETSCREEN-FS</dd>
+                        <dd>IU-CV-SAPGUI-FS</dd>
+                        <dd>IU-CV-SAS9.3-FS</dd>
+                        <dd>IU-CV-SCRATCH-FS</dd>
+                        <dd>IU-CV-SEISMICERUPTION-FS</dd>
+                        <dd>IU-CV-SPSS19-FS</dd>
+                        <dd>IU-CV-SPSS20-ALL</dd>
+                        <dd>IU-CV-STATA12-FS</dd>
+                        <dd>IU-CV-STATTRANSFER11-FS</dd>
+                        <dd>IU-CV-STELLARIUM-FS</dd>
+                        <dd>IU-CV-SWISSPDBVIEWER-FS</dd>
+                        <dd>IU-CV-SYMYXDRAW-FS</dd>
+                        <dd>IU-CV-TEXTPAD-FS</dd>
+                        <dd>IU-CV-TURNINGPOINTANYWHERE-FS</dd>
+                        <dd>IU-CV-VISIO-FS</dd>
+                        <dd>IU-CV-VLC-FS</dd>
+                        <dd>IU-CV-VSPHERE-FS</dd>
+                        <dd>IU-CV-WINDOWSHELP-FS</dd>
+                        <dd>IU-CV-WINQUAKE-FS</dd>
+                        <dd>IU-CV-WINSCP-FS</dd>
+                        <dd>IU-CV-WSXM-FS</dd>
+                        <dd>IU-EITS-FOCUSBOOTHS-USERS</dd>
+                        <dd>IU-ENTLMT-APP-CAS-MFA</dd>
+                        <dd>IU-ENTLMT-APP-CAS-MFA-REQUIRED</dd>
+                        <dd>IU-ENTLMT-APP-CAS-TEST-MFA</dd>
+                        <dd>IU-ENTLMT-APP-UIRR-UA-NFSTU</dd>
+                        <dd>IU-IMS-CAS-MFA-REQ</dd>
+                        <dd>IU-ITCP-IT28-STATUS</dd>
+                        <dd>IU-LSPS-DBV2-GUESTUSERS</dd>
+                        <dd>IU-LSPS-DBV2-IUWARE</dd>
+                        <dd>IU-LSPS-DBV2-PRODUCTKEYS</dd>
+                        <dd>IU-LSPS-DBV2-SEARCHEXEMPTIONS</dd>
+                        <dd>IU-LSPS-IUWAREEXEMPTION</dd>
+                        <dd>IU-LSPS-IUWARERESTRICTEDACCESS</dd>
+                        <dd>IU-LSPS-IUWARE_SERVER_DOWNLOAD</dd>
+                        <dd>IU-LSPS-KBRESTRICTEDACCESS</dd>
+                        <dd>IU-LSPS-LSPONLINEUITS</dd>
+                        <dd>IU-LSPS-LSPONLINEUSER</dd>
+                        <dd>IU-LSPS-W2K3R2</dd>
+                        <dd>IU-MSSG-ECA-IUIPSECOFFLINE</dd>
+                        <dd>IU-MSSG-ECA-IUWEBSERVER</dd>
+                        <dd>IU-MSSG-ECA-IUWORKSTATIONAUTHENTICATION</dd>
+                        <dd>IU-MSSG-ECA-IUWORKSTATIONAUTHENTICATIONOFFLINE</dd>
+                        <dd>IU-ONESTART-FORUMS</dd>
+                        <dd>IU-ONESTART-KUALI-DEVELOPERS</dd>
+                        <dd>IU-ONESTART-ONEPLACE-INITIAL-TESTERS</dd>
+                        <dd>IU-ONESTART-OSG-ADMINS</dd>
+                        <dd>IU-ONESTART-ROLE-VIEWER</dd>
+                        <dd>IU-PSIA-HIPAA-ALERT-SEPT2012</dd>
+                        <dd>IU-SAV-HCP-AD-INTEGRATION-GROUP</dd>
+                        <dd>IU-SCT2-FREEDUO</dd>
+                        <dd>IU-UITS-ALLSTAFF</dd>
+                        <dd>IU-UITS-CV-FACSTAFF</dd>
+                        <dd>IU-UITS-ENTERPRISE_SYSTEMS_INTEGRATION-STAFF</dd>
+                        <dd>IU-UITS-ITCP-PHISHALARM-DOWNLOAD</dd>
+                        <dd>IU-UITS-ITCP-UITS-PROFESSIONALS-ALL</dd>
+                        <dd>IU-UITS-ITCP-WOMBAT-TRAINING</dd>
+                        <dd>IU-UITS-KMS-AUDIENCE-IU-KB</dd>
+                        <dd>IU-UITS-KMS-AUDIENCE-KMS-ALL</dd>
+                        <dd>IU-UITS-KMS-AUDIENCE-UITS</dd>
+                        <dd>IU-UITS-KMS-EDIT-APPROVER</dd>
+                        <dd>IU-UITS-KMS-EDIT-APPROVER-ESPD</dd>
+                        <dd>IU-UITS-KMS-EDIT-USER</dd>
+                        <dd>IU-UITS-KMS-EDIT-USER-MDTEST</dd>
+                        <dd>IU-UITS-MANAGED-ALUMNI</dd>
+                        <dd>IU-UITS-MANAGED-BL-STAFF</dd>
+                        <dd>IU-UITS-MANAGED-BOX-USERS</dd>
+                        <dd>IU-UITS-MANAGED-DEPT-UA-VPIT</dd>
+                        <dd>IU-UITS-MANAGED-EBI-FERPA-ACCESS</dd>
+                        <dd>IU-UITS-MANAGED-EBI-UNIVERSITY-INTERNAL</dd>
+                        <dd>IU-UITS-MANAGED-EXCHANGE</dd>
+                        <dd>IU-UITS-MANAGED-EZPROXY-BL</dd>
+                        <dd>IU-UITS-MANAGED-ITCP-WOMBAT-TRAINING</dd>
+                        <dd>IU-UITS-MANAGED-KB-ALL</dd>
+                        <dd>IU-UITS-NETWORKING-STAFF</dd>
+                        <dd>IU-UITS-RESMBOX-IC-120-CAL-REQUESTAPPROVAL</dd>
+                        <dd>IU-UITS-RESMBOX-IC-216-CAL-REQUESTAPPROVAL</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_BL-CR-003-HPLJ9040-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_BL-IC-130-HPM476NW-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_BL-IC-133-RICOHMP-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_BL-LI-209-HPCLJ2605-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_BL-LI-305-HPLJ3005DN-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_BL-LI-E249-XP6500DN-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-013-HPLJP3015-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-035-HPCLJCP4005-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-113C-HPLJPD055-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-129B-HPCLJ3600-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-205-RICOHMP6001-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-210M-HPLJ9050-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-225D-HP451DN-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-314F-CIR5055-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-314F-HPLJ9050-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-314H-DJ800-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-324-HPLJ4050-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-324-KM4690MF-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-PRINTERS_IN-IT-408-RICOH3300-P</dd>
+                        <dd>IU-UITS-SERVERS-PROD-PRINT-OHM-USERS</dd>
+                        <dd>IU-UITS-TURING-DEPT-ES-ES-ESI-RW</dd>
+                        <dd>IU-UITS-TURING-DEPT-ES-ES-RW</dd>
+                        <dd>IU-UITS-TURING-DEPT-ES-RW</dd>
+                        <dd>IU-UITS-TURING-USERS</dd>
+                        <dd>IU-UITS-TURING-WORKGROUPACCESS</dd>
+                        <dd>IU-UITS-TURING-WRKGRP-DCOPS_APPLICATION_BATCH-RO</dd>
+                        <dd>IU-UITS-TURING-WRKGRP-DCOPS_DOCUMENT_DROPOFF</dd>
+                        <dd>IU-UITS-TURING-WRKGRP-DSCALL-RO</dd>
+                        <dd>IU-UITS-TURING-WRKGRP-PXA</dd>
+                        <dd>IU-UITS-TURING-WRKGRP-UIS_FISCAL</dd>
+                        <dd>IU-UITS-WORKFLOW-PUBLISHING-GLOBAL</dd>
+                        <dd>IU-UITS-WORKSTATIONUSERS</dd>
+                        <dd>IU-USSS_STAFF_FAC_GRAD_PRO_ACCESS</dd>
+                        <dd>IU-WCMS-USERS</dd>
+                        <dd>JTEST-ADS-ADMIN2</dd>
+                        <dd>JTEST-ADS-TEST</dd>
+                        <dd>JTEST-USER-VIEW</dd>
+                        <dd>KUALI-WORKFLOW-ADMINS</dd>
+                        <dd>NATEGROUP-UNT-TEST</dd>
+                        <dd>NATEGROUP2</dd>
+                        <dd>NATEGROUP541</dd>
+                        <dd>NATEGROUP542</dd>
+                        <dd>NATEGROUPXXXXX</dd>
+                        <dd>SAFEWORD_USERS</dd>
+                        <dd>SDD-DASHBOARD</dd>
+                        <dd>SDD-HERMES-REPORTING</dd>
+                        <dd>SDD-IUWARE</dd>
+                        <dd>SDD-IUWARE-IMS-EMPLOYEE</dd>
+                        <dd>SDD-IUWARE-IMS-STAFF</dd>
+                        <dd>SDD-IUWARE-SALES</dd>
+                        <dd>SSL-IUWARE-ROLE-ITPRO</dd>
+                        <dd>SSL-IUWARE-ROLE-MUSSIBELIUS</dd>
+                        <dd>SSL-IUWARE-ROLE-UITSPGP</dd>
+                        <dd>SSL-IUWARE-ROLEGROUPS</dd>
+                        <dd>UCP-USERS</dd>
+                        <dd>UCS-ALL</dd>
+                        <dd>UCS-APPOINTED</dd>
+                        <dd>UIS STAFF ? BLOOMINGTON</dd>
+                        <dd>UITS-10TH-UNION</dd>
+                    </dl>
+                    <dl id="sr_group" style="display:none">
+                        <dt>Members</dt>
+                        <dd>ABERRANTTRAM</dd>
+                        <dd>ABSENCEHIGHER</dd>
+                        <dd>ADAPTATIONCANINE</dd>
+                        <dd>ADVICEBATHTUB</dd>
+                        <dd>ALVEOLICIRCLE</dd>
+                        <dd>AMBULANCEPERTURBED</dd>
+                        <dd>AMOSTIRRY</dd>
+                        <dd>ANNOUNCEDENBY</dd>
+                        <dd>APHELIONMET</dd>
+                        <dd>APPEALCHOCKS</dd>
+                        <dd>AROSDUKE</dd>
+                        <dd>ATMOSPHEREWORDS</dd>
+                        <dd>BABOONHYPNOTIC</dd>
+                        <dd>BACKPACKHULL</dd>
+                        <dd>BASINMOTOR</dd>
+                        <dd>BASKVENFORD</dd>
+                        <dd>BEIGNETSORROWFUL</dd>
+                        <dd>BILLEDSHALLOW</dd>
+                        <dd>BIOPSYCERCANO</dd>
+                        <dd>BISECTISSUE</dd>
+                        <dd>BITSSPANISH</dd>
+                        <dd>BLISSFULSCRUFFY</dd>
+                        <dd>BLOCKWATERSKIER</dd>
+                        <dd>BODMINPRUNING</dd>
+                        <dd>BOGEYMAN</dd>
+                        <dd>BOLDMONTGOMERY</dd>
+                        <dd>BOOTEDSUSTAIN</dd>
+                        <dd>BOUNDFELISE</dd>
+                        <dd>BREATHEMUNCH</dd>
+                        <dd>BROOMFLAGELLUM</dd>
+                        <dd>BRRINGBESTOW</dd>
+                        <dd>BUFFALODISLIKE</dd>
+                        <dd>BUGGERWINK</dd>
+                        <dd>CALCIUMFEAR</dd>
+                        <dd>CANESSLAMMED</dd>
+                        <dd>CARDIOIDREPEAT</dd>
+                        <dd>CASINOKOBUK</dd>
+                        <dd>CELSIUSBISHOP</dd>
+                        <dd>CISCOIT</dd>
+                        <dd>COACHOKOTOKS</dd>
+                        <dd>COBOURGTOBOGGAN</dd>
+                        <dd>COFFINBAXTER</dd>
+                        <dd>COLOBUSIRATE</dd>
+                        <dd>COMBINEAPPAREL</dd>
+                        <dd>CORNFRODO</dd>
+                        <dd>CORONAHAMLET</dd>
+                        <dd>CROSSTREESPRESSURE</dd>
+                        <dd>CRUDIVORETORTELLINI</dd>
+                        <dd>CUMBRIARUM</dd>
+                        <dd>DARCYGANGWAY</dd>
+                        <dd>DECENTHORNBILL</dd>
+                        <dd>DEFENDEDROLLES</dd>
+                        <dd>DEFIANTBOCCE</dd>
+                        <dd>DICKYSQUARES</dd>
+                        <dd>DONATEDAROMATIC</dd>
+                        <dd>DOPEYTASTE</dd>
+                        <dd>DOROCOVET</dd>
+                        <dd>DORSETSTRAIGHT</dd>
+                        <dd>DOUTMADAME</dd>
+                        <dd>DRIVERSURFER</dd>
+                        <dd>EDDIENECESSARY</dd>
+                        <dd>EIDARTPROTOCOL</dd>
+                        <dd>ELOISEGLOBE</dd>
+                        <dd>ELONGATIONMICRO</dd>
+                        <dd>EONCALYPSO</dd>
+                        <dd>EPONALUCY</dd>
+                        <dd>EQUIPMENTBROWNIES</dd>
+                        <dd>ERGOSPHERECLUNK</dd>
+                        <dd>EULERMIRROR</dd>
+                        <dd>EVERESTMATANE</dd>
+                        <dd>EXAGGERATEPOISED</dd>
+                        <dd>EXPANDDECORATORS</dd>
+                        <dd>FALLOPIANSCORPIUS</dd>
+                        <dd>FEATURESNIGERIAN</dd>
+                        <dd>FEWPUNE</dd>
+                        <dd>FIDDLERSAMMY</dd>
+                        <dd>FIDDLEYWAIT</dd>
+                        <dd>FILESITEM</dd>
+                        <dd>FITNESSSHAG</dd>
+                        <dd>FLAPJACKSARRAY</dd>
+                        <dd>FORDANALOGUE</dd>
+                        <dd>FORESTERGENTRY</dd>
+                        <dd>FREECONVECTION</dd>
+                        <dd>FREEZERUNUNOCTIUM</dd>
+                        <dd>FRONTEDBILE</dd>
+                        <dd>GAGGLEDAMAGING</dd>
+                        <dd>GAILEECANTER</dd>
+                        <dd>GHOSTENGAGEMENT</dd>
+                        <dd>GITHUBBARKLEY</dd>
+                        <dd>GOVERNESSSHORTY</dd>
+                        <dd>GREATERALFRED</dd>
+                        <dd>GROUCHYRAISINS</dd>
+                        <dd>GUNSOBSTINACY</dd>
+                        <dd>GYMCHARGE</dd>
+                        <dd>HEARTYPARANOID</dd>
+                        <dd>HUSHEDBRACES</dd>
+                        <dd>IBEXELUMINOSITY</dd>
+                        <dd>IRASINFUL</dd>
+                        <dd>JACKSTAYSCHEMA</dd>
+                        <dd>JIGGAHOURGLASS</dd>
+                        <dd>JODRELLYODA</dd>
+                        <dd>KARMAHULKING</dd>
+                        <dd>KATIEDIAMOND</dd>
+                        <dd>LAPWINGDATATYPE</dd>
+                        <dd>LAUNCHINGROME</dd>
+                        <dd>LIMPINGSTAIR</dd>
+                        <dd>MACEDONIANALIEN</dd>
+                        <dd>MAINMETHOD</dd>
+                        <dd>MENTIONEDREALM</dd>
+                        <dd>MIDDLEPROLOG</dd>
+                        <dd>MINUSONE</dd>
+                        <dd>MISSIONCONCUR</dd>
+                        <dd>MITTPURSE</dd>
+                        <dd>MODERATOPAST</dd>
+                        <dd>MOJOLIVERPOOL</dd>
+                        <dd>MOLLYACIDIC</dd>
+                        <dd>MONORAILWHEEL</dd>
+                        <dd>MOONSHADOW</dd>
+                        <dd>MUSTYABERRANT</dd>
+                        <dd>MYELOMACOLUMNS</dd>
+                        <dd>NIGGLESCHRONIC</dd>
+                        <dd>OLDSPECKLED</dd>
+                        <dd>ONSMASHED</dd>
+                        <dd>OUTDENTAFRICA</dd>
+                        <dd>OWLUNABLE</dd>
+                        <dd>PANDARAFTING</dd>
+                        <dd>PAPERCLIPSNORKLING</dd>
+                        <dd>PHALANGESPOULTRY</dd>
+                        <dd>PILLMESOZOIC</dd>
+                        <dd>PIXYBREAKABLE</dd>
+                        <dd>POLARBEARGUDGEON</dd>
+                        <dd>PORTFOLIOPROBLEMS</dd>
+                        <dd>POSITIONQUARTERING</dd>
+                        <dd>PRESERVEKAZOO</dd>
+                        <dd>PROFITEROLETEMP</dd>
+                        <dd>PROVESPROMPTING</dd>
+                        <dd>RAINFELLOWSHIP</dd>
+                        <dd>RATTLEEXTINCTION</dd>
+                        <dd>REQUESTSTONE</dd>
+                        <dd>RESISTORLETS</dd>
+                        <dd>RIBBONPATCH</dd>
+                        <dd>RICHIZZY</dd>
+                        <dd>RIDECLYDACH</dd>
+                        <dd>ROLLRESOURCE</dd>
+                        <dd>ROSIESAXOPHONE</dd>
+                        <dd>SANDBOXBOLT</dd>
+                        <dd>SATJARGON</dd>
+                        <dd>SCISSORSTONK</dd>
+                        <dd>SCOOTLEVI</dd>
+                        <dd>SEMLAHILARIOUS</dd>
+                        <dd>SETTLEERRING</dd>
+                        <dd>SHAMPOOQUEBALL</dd>
+                        <dd>SHAPELESSSWELTERING</dd>
+                        <dd>SHORTBREADINTESTINE</dd>
+                        <dd>SHOWERSBISMARCK</dd>
+                        <dd>SHREWDKELLOGS</dd>
+                        <dd>SILICATEJEDI</dd>
+                        <dd>SINGULARITYJOLLY</dd>
+                        <dd>SKIINGDEGREES</dd>
+                        <dd>SKIRTINGROYAL</dd>
+                        <dd>SKYATLASANCHOR</dd>
+                        <dd>SLANGERICHT</dd>
+                        <dd>SLURPRADIATE</dd>
+                        <dd>SNOBBYCOURTEOUS</dd>
+                        <dd>SNOWDONGLASS</dd>
+                        <dd>SPARKBOGEYMAN</dd>
+                        <dd>SPEAKPEAT</dd>
+                        <dd>SPECKLEDBESSEL</dd>
+                        <dd>SPINALOUTDATED</dd>
+                        <dd>STARTUPPI</dd>
+                        <dd>STIMULUSSNOOPY</dd>
+                        <dd>STINGYTHESE</dd>
+                        <dd>SUFFERTRAPPED</dd>
+                        <dd>SUNDAYLUNA</dd>
+                        <dd>SUNDERLANDTIDY</dd>
+                        <dd>SUPPORTERSCREAMED</dd>
+                        <dd>SYNTHLUCERA</dd>
+                        <dd>TAGWINDOW</dd>
+                        <dd>TARPREBEL</dd>
+                        <dd>TARRETKABUL</dd>
+                        <dd>TATTEREDBAYSDALE</dd>
+                        <dd>TEARSTEEL</dd>
+                        <dd>TEMPORARYGHOST</dd>
+                        <dd>THEMWEATHERLY</dd>
+                        <dd>THUNDERYDIVERSITY</dd>
+                        <dd>TICKETADZE</dd>
+                        <dd>TOUCANEMPIRE</dd>
+                        <dd>TRADEMARKAFFREIGHTMENT</dd>
+                        <dd>UMBRIELBLEDGE</dd>
+                        <dd>UNDERINFECTIOUS</dd>
+                        <dd>VIATEKTON</dd>
+                        <dd>VINNEYCLIPBOARD</dd>
+                        <dd>WEATHERBOARDCULTURES</dd>
+                        <dd>WIGGLEDENALI</dd>
+                        <dd>WITTYNAVIGATION</dd>
+                        <dd>WOLFTEA</dd>
+                        <dd>XENOLITHCICI</dd>
+                        <dd>YIKESCONDUCTING</dd>
+                        <dd>YORKSHIRETIDALLY</dd>
+                        <dd>YOUNGERGAME</dd>
+                    </dl>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </div>
@@ -391,4 +552,37 @@
 </body>
 <script type="text/javascript" src="../js/jquery.js"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#by_user").click(function() {
+            $("#label_user").show();
+            $("#label_group,#sr_userlabel,#sr_user, #sr_group,#sr_grouplabel").hide();
+			$("#query").val("");
+        });
+        $("#by_group").click(function() {
+            $("#label_user, #sr_userlabel, #sr_user, #sr_group,#sr_grouplabel").hide();
+            $("#label_group").show();
+			$("#query").val("");
+        });
+
+        $("#query").focusout(function() {
+			
+            if (this.value == "thrclark") {
+                $("#sr_user,#sr_userlabel").css("display", "inline-block");
+            } else {
+                $("#sr_user,#sr_userlabel").css("display", "none");
+            }
+			 
+        });
+		
+		$("#query").focusout(function() {
+			
+            if (this.value == "UCS-ALL") {
+                $("#sr_group,#sr_grouplabel").css("display", "inline-block");
+            } else {
+                $("#sr_group,#sr_grouplabel").css("display", "none");
+            }
+        });
+    });
+</script>
 </html>
