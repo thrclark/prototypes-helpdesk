@@ -19,11 +19,12 @@
             </div>
         </div>
     </header>
-    <div class="main-content container" role="main">
-        <p> Interactive - search on 'thrclark' (user) or 'UCS-ALL' (group) to see results set:</p>
+    <div class="main-content container" role="main"> <a href="helpdesk1.php" target="_blank" class="lead">Prototype</a>
+        <p> Interactive - the following terms may be used for search:</p>
         <ul>
-            <li> <a href="helpdesk1.php" target="_blank">Layout - side by side</a></li>
-          
+            <li> 'thrclark' (returns user info) </li>
+            <li> 'UCS-ALL' (returns group info) </li>
+            <li> 'asdf' (returns 'user/group not found' messaging) </li>
         </ul>
     </div>
 </div>
