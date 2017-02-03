@@ -1,13 +1,13 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>IU Help Desk</title>
 <link href="../less/styles.css" rel="stylesheet" type="text/css">
 <style></style>
 </head>
 
-<body id="top" screen_capture_injected="true">
+<body id="top">
 <div class="wrapper">
     <?php include ('includes/brand-header.php') ?>
     <header>
@@ -26,16 +26,15 @@
         <div class="row">
             <div class="col-md-4 search">
                 <div class="lead">Search</div>
-                <div> 
-                    
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs nav-justified" role="tablist">
-                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" id="by_user">By User</a></li>
-                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" id="by_group">By Group</a></li>
+                <div>
+                    <ul class="nav nav-tabs nav-justified" >
+                        <li role="presentation" class="active"><a href="#home"  data-toggle="tab" id="by_user">By User</a></li>
+                        <li role="presentation"><a href="#profile"  data-toggle="tab" id="by_group">By Group</a></li>
                     </ul>
                 </div>
                 <div class="well well-sm">
                     <div class="input-group input-group-lg">
+                        <label for="query" class="sr-only">Search Query</label>
                         <input type="text" class="form-control" placeholder="" id="query">
                         <span class="input-group-btn">
                         <button class="btn btn-default" type="button" id="searchbutton"><i class="fa fa-search" aria-hidden="true"><span class="sr-only">Search</span></i></button>
@@ -557,9 +556,8 @@
     </div>
     <?php include ('includes/brand-footer.php') ?>
 </div>
-</body>
-<script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.js"></script> 
+<script type="text/javascript" src="../js/bootstrap.min.js"></script> 
 <script>
     $(document).ready(function() {
         $("#by_user").click(function() {
@@ -595,4 +593,5 @@
         });
     });
 </script>
+</body>
 </html>
