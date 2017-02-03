@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>IU Help Desk</title>
 <link href="../less/styles.css" rel="stylesheet" type="text/css">
-<style></style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body id="top">
@@ -42,7 +42,7 @@
                 </div>
                 <label class="checkbox-inline" id="archivalrecords">
                     <input type="checkbox" id="inlineCheckbox1" value="option1">
-                    search archival records </label>
+                    search historical records </label>
                 <hr class="hidden-md hidden-lg">
             </div>
             <div class="col-md-8">
