@@ -23,7 +23,6 @@
         <p> Interactive - search on 'thrclark' (user) or 'UCS-ALL' (group) to see results set:</p>
         <ul>
             <li> <a href="helpdesk1.php" target="_blank">Layout - side by side</a></li>
-             <li> <a href="helpdesk2.php" target="_blank">Layout - stacked</a></li>
           
         </ul>
     </div>

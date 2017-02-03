@@ -11,10 +11,13 @@
 <div class="wrapper">
     <?php include ('includes/brand-header.php') ?>
     <header>
-        <div class="container" >
+        <div class="container">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-8">
                     <h1 class="">IU Help Desk</h1>
+                </div>
+                <div class="col-xs-4">
+                    <p class="navbar-text"><a href="https://one.iu.edu/store"> One.IU <i class="fa fa-angle-right" aria-hidden="true"></i></a> </p>
                 </div>
             </div>
         </div>
@@ -38,6 +41,10 @@
                         <button class="btn btn-default" type="button" id="searchbutton"><i class="fa fa-search" aria-hidden="true"><span class="sr-only">Search</span></i></button>
                         </span> </div>
                 </div>
+                <label class="checkbox-inline" id="archivalrecords">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1">
+                    search archival records </label>
+                <hr class="hidden-md hidden-lg">
             </div>
             <div class="col-md-8">
                 <div class="search-results">
@@ -542,6 +549,7 @@
                         <dd>YORKSHIRETIDALLY</dd>
                         <dd>YOUNGERGAME</dd>
                     </dl>
+                    <div class="no-matches" id="no_matches" style="display:none"> No matches for 'asdf' found.</div>
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -555,32 +563,34 @@
 <script>
     $(document).ready(function() {
         $("#by_user").click(function() {
-            $("#label_user").show();
+            $("#label_user, #archivalrecords").show();
             $("#label_group,#sr_userlabel,#sr_user, #sr_group,#sr_grouplabel").hide();
-			$("#query").val("");
+            $("#query").val("");
         });
         $("#by_group").click(function() {
-            $("#label_user, #sr_userlabel, #sr_user, #sr_group,#sr_grouplabel").hide();
+            $("#label_user, #sr_userlabel, #sr_user, #sr_group,#sr_grouplabel,#archivalrecords").hide();
             $("#label_group").show();
-			$("#query").val("");
+            $("#query").val("");
         });
-
         $("#query").focusout(function() {
-			
             if (this.value == "thrclark") {
                 $("#sr_user,#sr_userlabel").css("display", "inline-block");
             } else {
                 $("#sr_user,#sr_userlabel").css("display", "none");
             }
-			 
         });
-		
-		$("#query").focusout(function() {
-			
+        $("#query").focusout(function() {
             if (this.value == "UCS-ALL") {
                 $("#sr_group,#sr_grouplabel").css("display", "inline-block");
             } else {
                 $("#sr_group,#sr_grouplabel").css("display", "none");
+            }
+        });
+        $("#query").focusout(function() {
+            if (this.value == "asdf") {
+                $("#no_matches").css("display", "inline-block");
+            } else {
+                $("#no_matches").css("display", "none");
             }
         });
     });
