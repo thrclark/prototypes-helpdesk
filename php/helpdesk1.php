@@ -28,8 +28,8 @@
                 <div class="lead">Search</div>
                 <div>
                     <ul class="nav nav-tabs nav-justified" >
-                        <li role="presentation" class="active"><a href="#home"  data-toggle="tab" id="by_user">By User</a></li>
-                        <li role="presentation"><a href="#profile"  data-toggle="tab" id="by_group">By Group</a></li>
+                        <li role="presentation" class="active"><button class="btnn btn-linkn"  data-toggle="tab" id="by_user">By User</button></li>
+                        <li role="presentation"><button  class="btnn btn-linkn" data-toggle="tab" id="by_group">By Group</button></li>
                     </ul>
                 </div>
                 <div class="well well-sm">
