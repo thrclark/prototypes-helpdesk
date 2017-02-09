@@ -11,6 +11,12 @@ header {
   }
 }
 
+.lead {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+
+}
+
 .search {
   .well.well-sm {
     border-top: none;
@@ -61,9 +67,20 @@ header {
 }
 
 .search-results {
-  //border-left: solid 1px #dddddd;
   min-height: 400px;
-  //padding-left: 30px;
+
+
+
+  hr {
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+
+
+
+
+
+
   dl {
 
     dt {
@@ -78,7 +95,7 @@ header {
         content: "";
         height: 1px;
         left: 0px;
-        margin-top: -5px;
+        bottom: 5px;
         position: absolute;
         width: 280%;
 
@@ -109,6 +126,21 @@ header {
       hyphens: auto;
     }
 
+  }
+  ul {
+    li{
+      padding-bottom: 5px;
+      padding-top: 5px;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      -ms-word-break: break-all;
+      word-break: break-all;
+      word-break: break-word;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+    }
   }
 }
 
