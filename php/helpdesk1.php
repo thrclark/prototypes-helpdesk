@@ -16,7 +16,7 @@
                     <h1 class="">IU Help Desk</h1>
                 </div>
                 <div class="col-xs-4">
-                    <p class="navbar-text"><a href="https://one.iu.edu/store"> One.IU <i class="fa fa-angle-right" aria-hidden="true"></i></a> </p>
+                   
                 </div>
             </div>
         </div>
