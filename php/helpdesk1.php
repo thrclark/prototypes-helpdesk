@@ -39,7 +39,7 @@
                         <button class="btn btn-default" type="button" id="searchbutton"><i class="fa fa-search" aria-hidden="true"><span class="sr-only">Search</span></i></button>
                         </span> </div>
                 </div>
-                <label class="checkbox-inline" id="archivalrecords" style="margin-bottom: 15px;">
+                <label class="checkbox-inline" id="archivalrecords" style="">
                     <input type="checkbox" id="inlineCheckbox1" value="option1">
                     search historical records </label>
             </div>
